@@ -1,7 +1,7 @@
 import axios from "axios";
-
+import backendurl from "./backendurlsometinliketat";
 const api = axios.create({
-    baseURL: "http://localhost:3000/api/v1"
+    baseURL: backendurl
 });
 
 export default api;
