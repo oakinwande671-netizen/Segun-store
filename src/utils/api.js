@@ -1,7 +1,7 @@
 import axios from "axios";
 import backendurl from "./backendurlsometinliketat";
 const api = axios.create({
-    baseURL:'https://segun-store-backend.onrender.com/api/v1',   
+    baseURL:'https://segun-store-backend.onrender.com',   
      headers: {
         'Content-Type': 'application/json'
     }
