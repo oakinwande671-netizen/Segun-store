@@ -1,2 +1,2 @@
-const backendurl='https://segun-store-backend.onrender.com/api/v1/';
+const backendurl='https://segun-store-backend.onrender.com';
 export default backendurl;
