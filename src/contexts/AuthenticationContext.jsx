@@ -17,15 +17,19 @@ export function AuthenticationProvider({ children }) {
     }, []);
 
     const login = async (username, password) => {
-        const loginReq = await fetch('/users/login', {
-            method: 'post',
+        const loginReq = await fetch(
+          "https://segun-store-backend.onrender.com/users/login",
+          {
+            method: "post",
             headers: {
-                'Content-Type': 'application/json'
+              "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                username, password
-            })
-        });
+              username,
+              password,
+            }),
+          },
+        );
         const user = await loginReq.json();
 
         localStorage.setItem('user', JSON.stringify(user));
